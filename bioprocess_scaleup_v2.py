@@ -656,7 +656,7 @@ def generate_charts(results, df, model):
         ax6.annotate(f"Ex{i+1}", (vl, tm), textcoords="offset points",
                      xytext=(5, 5), fontsize=7, color=palette[i])
 
-    out = "/home/claude/scaleup_dashboard.png"
+    out = "scaleup_dashboard.png"
     plt.savefig(out, dpi=150, bbox_inches="tight", facecolor=CHART_BG)
     plt.close()
     print(f"\n  {C.BGREEN}Charts saved -> {out}{C.RESET}")
